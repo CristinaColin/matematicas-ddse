@@ -51,4 +51,17 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Obtener todos los enlaces de la barra de navegación
+    const navLinks = document.querySelectorAll('#navbarResponsive .nav-link');
+
+    // Obtener la URL actual
+    const currentUrl = window.location.href;
+
+    // Recorrer los enlaces y agregar la clase 'active' al enlace que coincida con la página actual
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            link.classList.add('active');
+        }
+    });
+
 });

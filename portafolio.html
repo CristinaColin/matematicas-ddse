@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,19 +17,23 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    
+    <body>
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Aprender jugando </a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Talleres</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="portafolio.html">Portafolio Page</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Talleres</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio Page</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Comunidad</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Formulario</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#footer">Contacto</a></li>
@@ -36,37 +41,69 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/tianguis.png" style="width:80% !important; height:auto; !important" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Conserva el agua</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">
-                    Universidad Michoacana de San Nicolás de Hidalgo<br>
-                    Viernes 19 de 08:00 a 16:00 horas y sábado 20 de abril, de 10:00 a 17:00
-                </p>
+        
+
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div>
+            <div id="mapa" class="w3-container w3-card">
+                <h4>&#128506; Mapa del reino de las multiplicaciones</h4>
+                
+                <p>Si quieres la aventura completa, <span class='clickable' onclick='tarea(1,0);'>haz click aquí</span> .
+                Cuando comience tu aventura, podrás saltar a la siguiente fase o regresar al mapa
+                (tú sabrás lo que tienes que hacer cuando llegue la hora).</p>
+                
+                <p>También puedes hacer click en donde quieras ir: &plus; es el más fácil, &#128148; es el más difícil. ¡Feliz viaje!</p>
+                
+                <table>
+                    <tr>
+                    <td class='clickable' onclick='tarea(1,0);'>Valle del 1</td><td class='clickable' onclick='tarea(1,0);'>
+                        &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(1,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp;
+                        </td><td class='clickable' onclick='tarea(1,2);'> &nbsp; &#127774; &nbsp;
+                        </td>
+                        <td class='clickable' onclick='tarea(1,3);'> &nbsp; &#128371; &nbsp;
+                        </td>
+                        <td class='clickable' onclick='tarea(1,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(1,5);'> &nbsp; &#9703; &nbsp;
+                        </td>
+                        <td class='clickable' onclick='tarea(1,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(1,7);'> &nbsp; &#128148; &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                    <td class='clickable' onclick='tarea(2,0);'>2 ríos</td><td class='clickable' onclick='tarea(2,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(2,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(2,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(2,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(2,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(2,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(2,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(2,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(3,0);'>Barranca del 3</td><td class='clickable' onclick='tarea(3,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(3,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(3,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(3,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(3,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(3,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(3,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(3,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(4,0);'>Desierto del 4</td><td class='clickable' onclick='tarea(4,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(4,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(4,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(4,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(4,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(4,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(4,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(4,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(5,0);'>Llanura del 5</td><td class='clickable' onclick='tarea(5,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(5,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(5,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(5,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(5,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(5,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(5,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(5,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(6,0);'>Monte del 6</td><td class='clickable' onclick='tarea(6,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(6,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(6,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(6,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(6,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(6,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(6,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(6,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(7,0);'>Laberinto del 7</td><td class='clickable' onclick='tarea(7,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(7,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(7,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(7,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(7,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(7,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(7,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(7,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(8,0);'>Bahía del 8</td><td class='clickable' onclick='tarea(8,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(8,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(8,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(8,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(8,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(8,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(8,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(8,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(9,0);'>Isla del 9</td><td class='clickable' onclick='tarea(9,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(9,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(9,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(9,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(9,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(9,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(9,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(9,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                    <tr><td class='clickable' onclick='tarea(10,0);'>Gran ciudad del 10</td><td class='clickable' onclick='tarea(10,0);'> &nbsp; &plus; &nbsp; </td><td class='clickable' onclick='tarea(10,1);'> &nbsp; &bull;,&bull;,&bull; &nbsp; </td><td class='clickable' onclick='tarea(10,2);'> &nbsp; &#127774; &nbsp; </td><td class='clickable' onclick='tarea(10,3);'> &nbsp; &#128371; &nbsp; </td><td class='clickable' onclick='tarea(10,4);'> &nbsp; &#129717; &nbsp; </td><td class='clickable' onclick='tarea(10,5);'> &nbsp; &#9703; &nbsp; </td><td class='clickable' onclick='tarea(10,6);'> &nbsp; &clubs; &nbsp; </td><td class='clickable' onclick='tarea(10,7);'> &nbsp; &#128148; &nbsp; </td></tr>
+                </table>
             </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+                
+            <div id="trabajo" class="w3-container" style="display:none">
+                <div class="w3-container" id="pregunta">
+            </div>
+            
+            <hr>
+                
+            <p>
+                <button onclick='saltar();' class='clickable'> &rarr; </button> &nbsp; &nbsp; 
+                <button onclick='vencido();' class='clickable'> &#128506; </button>
+            </p>
+        </div>
+
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Talleres</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">El mundo de los números</h2>
+
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
@@ -111,7 +148,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/rio2.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/mar.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
@@ -120,149 +157,39 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/campo.png" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/campo.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cascada.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/mar.png" alt="..." />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Comunidad</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">La Universidad Michoacana de San Nicolás de hidalgo trae la entrega  del ya famoso Aprender jugando donde podrás encontrar talleres y blah, blah, blah..</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://www.umich.mx/">
-                        <i class="fas fa-download me-2"></i>
-                        ¡Conócenos!
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        
-        
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Fromulario</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-
-        <!-- Footer-->
-        <footer id="footer"class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Ubicación</h4>
-                        <p class="lead mb-0">
-                            Avenida Francisco J. Múgica S/N Ciudad Universitaria
-                            <br />
-                            C.P. 58030, Morelia, Michoacán
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/UniversidadMichoacanadeSanNicolasdeHidalgoOficial"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/cicumsnh"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
-        </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
 
@@ -465,14 +392,191 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+       
+    <script>
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) { 
+        
+            // Generate random number 
+            var j = Math.floor(Math.random() * (i + 1));
+                        
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+            
+        return array;
+    }
+    var totalTareas = 8;
+    var fase = 0;
+    var num = 1;
+    var otro = 1;
+    function tarea(n,f){
+        num = n;
+        fase = f;
+        otro = 1;
+        general(fase,num,otro);
+        document.getElementById("trabajo").style.display = "block";
+        document.getElementById("mapa").style.display = "none";
+        document.getElementById("box").focus();
+    }
+    function saltar(){
+        otro = 10;
+        siguiente();
+    }
+    function vencido(){
+        num = 1;
+        fase = 0;
+        otro = 1;
+        numeros = shuffleArray(numeros);
+        document.getElementById("trabajo").style.display = "none";
+        document.getElementById("mapa").style.display = "block";
+    }
+    function general(fase,n,i){
+        if(0 == fase){
+        sumaSimple(n,i);
+        } else if(1 == fase){
+        sumaSecuencial(n,i);	
+        } else if(2 == fase){
+        secuenciaRapida(n,i);	
+        } else if(3 == fase){
+        secuenciaHoyo(n,i);	
+        } else if(4 == fase){
+        tablaHoyo(n,i);	
+        } else if(5 == fase){
+        tablaRapida(n,i);	
+        } else if(6 == fase){
+        productoSimple(n,i);	
+        } else{
+        productoLoco(n,i);	
+        }
+        document.getElementById("box").focus();
+    }
+    function siguiente(){
+        var termino = false;
+        otro++;
+        if(10 < otro){ // Siguiente fase
+        otro = 1;
+        fase++;
+        if(totalTareas == fase){ // Siguiente número
+            fase = 0;
+            num++;
+            if(10 < num){ // Ya terminó!!
+            termino = true;
+            }
+        }
+        }
+        if(true == termino){
+        num = 1;
+        fase = 0;
+        otro = 1;
+        alert("¡FELICIDADES! Terminaste exitosamente la aventura.")
+        } else {
+        general(fase,num,otro);
+        }
+    }
+    var respuesta = "";
+    var INP = "<input type='text' id='box' onkeyup='checa();' size='3' autofocus>\n";
+    function sumaSimple(a,b){
+        //var b = bm - 1;
+        document.getElementById("pregunta").innerHTML = (a*(b-1))+" + "+a+" = "+INP;
+        respuesta = (a*b).toString();
+    }
+    function sumaSecuencial(a,b){
+        var texto = "Suma "+a+" al número anterior: 0, ";
+        for(var i=1; i<b; i++){
+        texto += (a*i)+", ";
+        }
+        texto += (a*(b-1))+" + "+a+" = "+INP;
+        document.getElementById("pregunta").innerHTML = texto;
+        respuesta = (a*b).toString();
+    }
+    function secuenciaRapida(a,b){
+        var texto = "Empieza con "+a+" y sigue sumando: ";
+        for(var i=1; i<b; i++){
+        texto += (a*i)+", ";
+        }
+        texto += INP;
+        document.getElementById("pregunta").innerHTML = texto;
+        respuesta = (a*b).toString();
+    }
+    function secuenciaHoyo(a,b){
+        var texto = "Empieza con "+a+" y sigue sumando: ";
+        for(var i=1; i<11; i++){
+        if(b == i){
+            texto += INP;
+            if(i < 10){
+            texto += ", ";
+            }
+        } else if(10 == i){
+            texto += (a*i);		
+        } else{
+            texto += (a*i)+", ";		
+        }
+        }
+        document.getElementById("pregunta").innerHTML = texto;
+        respuesta = (a*b).toString();
+    }
+    function tablaHoyo(a,b){
+        var texto = "Completa la tabla del "+a+": <br>\n";
+        for(var i=1; i<11; i++){
+        if(b == i){
+            texto += a+" x "+i+" = "+INP;
+            if(i < 10){
+            texto += "<br> ";
+            }
+        } else if(10 == i){
+            texto += a+" x "+i+" = "+(a*i);		
+        } else{
+            texto += a+" x "+i+" = "+(a*i)+"<br> ";		
+        }
+        }
+        document.getElementById("pregunta").innerHTML = texto;
+        respuesta = (a*b).toString();
+    }
+    function tablaRapida(a,b){
+        var texto = "Ve escribiendo la tabla del "+a+":<br>\n ";
+        for(var i=1; i<b; i++){
+        texto += a+" x "+i+" = "+(a*i)+"<br> ";
+        }
+        texto += a+" x "+b+" = "+INP;
+        document.getElementById("pregunta").innerHTML = texto;
+        respuesta = (a*b).toString();
+    }
+    function productoSimple(a,b){
+        document.getElementById("pregunta").innerHTML = a+" x "+b+" = "+INP;
+        respuesta = (a*b).toString();
+    }
+    var numeros = new Array(1,2,3,4,5,6,7,8,9,10);
+    numeros = shuffleArray(numeros);
+    function productoLoco(a,bm){
+        var b = numeros[bm-1];
+        document.getElementById("pregunta").innerHTML = a+" x "+b+" = "+INP;
+        respuesta = (a*b).toString();
+    }
+    var resueltos = [];
+    function checa(){
+        var cad = document.getElementById("box").value;
+        if(respuesta.startsWith(cad)){
+        document.getElementById("box").style.backgroundColor = "LightGreen";
+        document.getElementById("box").style.color = "Black";
+        if( respuesta == cad ){
+            siguiente();
+        }
+        } else {
+        document.getElementById("box").style.backgroundColor = "DarkRed";
+        document.getElementById("box").style.color = "Yellow";
+        }
+    }
+    </script>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+            <!-- * *                               SB Forms JS                               * *-->
+            <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
-</html>
+    </html>
