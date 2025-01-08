@@ -183,14 +183,31 @@ var resueltos = [];
 function checa(){
     var cad = document.getElementById("box").value;
     if(respuesta.startsWith(cad)){
-    document.getElementById("box").style.backgroundColor = "LightGreen";
-    document.getElementById("box").style.color = "Black";
-    if( respuesta == cad ){
-        siguiente();
-    }
+        document.getElementById("box").style.backgroundColor = "LightGreen";
+        document.getElementById("box").style.color = "Black";
+        let iconoCuidado = document.getElementById("cuidado" + num);
+        if (iconoCuidado) {
+            iconoCuidado.remove();
+        }
+        if( respuesta == cad ){
+            if (!document.getElementById("palomita" + num)) {
+                let iconoPalomita = document.createElement("i");
+                iconoPalomita.className = "bi bi-check-circle text-success ms-2"; // Clases Bootstrap
+                iconoPalomita.id = "palomita" + num; // ID único por pregunta
+                document.getElementById("pregunta" + num).appendChild(iconoPalomita);
+            }
+            setTimeout(() => {siguiente();}, 2000);
+        }
     } else {
-    document.getElementById("box").style.backgroundColor = "DarkRed";
-    document.getElementById("box").style.color = "Yellow";
+        document.getElementById("box").style.backgroundColor = "DarkRed";
+        document.getElementById("box").style.color = "Yellow";
+
+        if (!document.getElementById("cuidado" + num)) {
+            let iconoCuidado = document.createElement("i");
+            iconoCuidado.className = "bi bi-exclamation-diamond text-warning ms-2"; // Clases Bootstrap
+            iconoCuidado.id = "cuidado" + num; // ID único por pregunta
+            document.getElementById("pregunta" + num).appendChild(iconoCuidado);
+        }
     }
 }
 function toggle(){
